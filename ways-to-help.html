@@ -9,263 +9,359 @@
             content="official website for Babul-keyer Aid Organisation" />
 
         <title>Ways to help</title>
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="./navbar.responsive.css" />
-        <link rel="stylesheet" href="./footer.responsive.css" />
-        <link rel="stylesheet" href="./ways-to-help.responsive.css" />
+        <link
+            href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous" />
     </head>
+
     <body>
-        <header class="header">
-            <a href="./index.html">
-                <img
-                    src="./images/logo-removebg-preview.png"
-                    alt="A company logo"
-                    class="logo" />
+        <header>
+            <nav
+                class="navbar sticky-top navbar-expand-md navbar-light px-5"
+                style="
+                    background-color: #cfefeb;
+                    border-top: 15px #096a5c solid;
+                ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            width="75px"
+                            class="img-fluid"
+                            src="./images/logo-removebg-preview.png"
+                            alt="organization logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-3 align-middle">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="./index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item px-3 align-middle">
+                                <a class="nav-link" href="./our-works.html"
+                                    >Our Works</a
+                                >
+                            </li>
+                            <li class="nav-item px-3 align-middle">
+                                <a class="nav-link" href="./ways-to-help.html"
+                                    >Ways to help</a
+                                >
+                            </li>
+                            <!-- <li class="nav-item dropdown px-3 align-middle">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              What's New
             </a>
-            <nav class="main-nav">
-                <ul class="main-nav-list">
-                    <li>
-                        <a href="./index.html" class="main-nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="./our-works.html" class="main-nav-link"
-                            >Our Works</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./ways-to-help.html" class="main-nav-link"
-                            >Ways to Help</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./about.html" class="main-nav-link"
-                            >About us</a
-                        >
-                    </li>
-
-                    <li>
-                        <a href="./contact.html" class="main-nav-link"
-                            >Contact</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./donate.html" class="main-nav-link donate-btn"
-                            >Donate</a
-                        >
-                    </li>
-                </ul>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./Events.html">Events</a></li>
+              <li><a class="dropdown-item" href="./News.html">News</a></li>
+            </ul>
+          </li> -->
+                            <li class="nav-item px-3 align-middle">
+                                <a class="nav-link" href="./about.html"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li class="nav-item px-3 align-middle">
+                                <a
+                                    class="nav-link align-middle"
+                                    href="./contact.html"
+                                    >Contact Us</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link btn btn-outline-success px-4 py-2"
+                                    href="./donate.html"
+                                    >Donate</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <button class="btn-mobile-nav" onclick="handleMenu()">
-                <img
-                    src="./images/close-outline.svg"
-                    alt="close button"
-                    class="icon-mobile-nav"
-                    id="close"
-                    name="close-outline" />
-
-                <img
-                    src="./images/menu-outline.svg"
-                    alt="menu button"
-                    class="icon-mobile-nav"
-                    id="menu"
-                    name="menu-outline" />
-            </button>
         </header>
-
-        <section class="cover-image-container">
+        <section class="">
             <img
                 src="./images/kids laughing 3.jpg"
-                alt="our-works image"
-                class="cover-image" />
+                class="object-fit-cover w-100"
+                width="auto" />
         </section>
 
-        <section class="ways-to-help container">
-            <h1 class="section-h1 align-center h-margin--tsm">
-                How can you help us
-            </h1>
-            <p class="section-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-                aperiam dolor nihil accusantium, ipsum, unde corrupti earum
-                itaque laboriosam ratione ullam quae minima et? Molestiae optio
-                saepe eligendi voluptas minus, praesentium vero voluptate
-                tempora, voluptatibus id explicabo? Velit, aspernatur vero non
-                quos repudiandae quia vitae quaerat commodi cum magni fugiat
-                blanditiis doloremque eveniet esse totam ab itaque sapiente
-                neque pariatur ullam eius. Mollitia modi quis, adipisci nostrum
-                in vero nulla distinctio a ab fugiat reprehenderit excepturi
-                ipsum, voluptatem eum quos commodi laborum natus aliquam?
-                Repellat temporibus aut doloribus ipsam deserunt aperiam ab
-                veritatis modi odio perspiciatis pariatur recusandae, porro
-                nihil.
-            </p>
-        </section>
-        <section class="support-our-mission container">
-            <h1 class="section-h1 align-center h-margin--tsm">
-                Support Our Mission
-            </h1>
-
-            <div class="support-container">
-                <div class="support-container__items">
-                    <img
-                        src="./images/black hands for water.jpg"
-                        alt="Picture showing one of the ways to help us" />
-
-                    <div class="support-container__items-description">
-                        <h2 class="section-h2">Lorem Ipsum</h2>
-                        <p class="section-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Amet beatae cupiditate eum voluptatem ea
-                            distinctio, dolores nobis quaerat nemo odio?
-                        </p>
-                        <a
-                            href="donate.html"
-                            class="btn btn--full h-margin--tsm"
-                            >Donate</a
-                        >
-                    </div>
-                </div>
-                <div class="support-container__items">
-                    <img
-                        src="./images/girl image for hero.jpg"
-                        alt="Picture showing one of the ways to help us" />
-                    <div class="support-container__items-description">
-                        <h2 class="section-h2">Lorem Ipsum</h2>
-                        <p class="section-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Amet beatae cupiditate eum voluptatem ea
-                            distinctio, dolores nobis quaerat nemo odio?
-                        </p>
-                        <a
-                            href="donate.html"
-                            class="btn btn--full h-margin--tsm"
-                            >Donate</a
-                        >
-                    </div>
-                </div>
+        <section class="">
+            <div class="organization-description">
+                <h1 class="section-h1 text-center mb-5">How can you help us</h1>
+                <p class="lead px-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum sapiente voluptate similique, iste eos asperiores
+                    accusamus consequatur voluptatibus quisquam ea minus quia,
+                    quae odio, voluptates culpa. Voluptate libero culpa unde
+                    distinctio ea ut ipsa quia corrupti praesentium, quibusdam
+                    dignissimos. Ipsa, in? Nulla ex, rem doloremque dicta culpa,
+                    quaerat id qui, autem veniam voluptatum laudantium quidem
+                    velit incidunt voluptate eos! Totam, sit asperiores!
+                    Corrupti tempore molestias laborum modi, non quo porro
+                    veniam fugit incidunt! Sit animi qui omnis illo voluptatem
+                    officiis fuga at earum libero veniam architecto tenetur,
+                    optio rem incidunt soluta placeat? Corrupti, odio voluptas!
+                    Cupiditate
+                </p>
             </div>
         </section>
 
-        <section class="support-our-mission container">
-            <h1 class="section-h1 align-center h-margin--tsm">Get Involved</h1>
-
-            <div class="support-container">
-                <div class="support-container__items">
-                    <img
-                        src="./images/old people hand.jpg"
-                        alt="Picture showing one of the ways to help us" />
-
-                    <div class="support-container__items-description">
-                        <h2 class="section-h2">Lorem Ipsum</h2>
-                        <p class="section-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Amet beatae cupiditate eum voluptatem ea
-                            distinctio, dolores nobis quaerat nemo odio?
-                        </p>
-                        <a
-                            href="contact.html"
-                            class="btn btn--full h-margin--tsm"
-                            >Contact</a
-                        >
+        <section class="px-5">
+            <h1 class="section-h1 text-center mb-5">Support Our Mission</h1>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"
+                            ><img
+                                class="card-img-top"
+                                src="./images/black hands for water.jpg"
+                                alt="Picture showing one of the ways to help us"
+                                height="400"
+                        /></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem Ipsum!</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Fugit aliquam aperiam nulla
+                                perferendis dolor nobis numquam, rem expedita,
+                                aliquid optio, alias illum eaque. Non magni,
+                                voluptates quae, necessitatibus unde temporibus.
+                            </p>
+                            <a
+                                class="btn btn-success py-2 px-4"
+                                href="./donate.html">
+                                Donate
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="support-container__items">
-                    <img
-                        src="./images/kid getting reated.jpg"
-                        alt="Picture showing one of the ways to help us" />
-                    <div class="support-container__items-description">
-                        <h2 class="section-h2">Lorem Ipsum</h2>
-                        <p class="section-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Amet beatae cupiditate eum voluptatem ea
-                            distinctio, dolores nobis quaerat nemo odio?
-                        </p>
-                        <a
-                            href="contact.html"
-                            class="btn btn--full h-margin--tsm"
-                            >Contact</a
-                        >
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"
+                            ><img
+                                class="card-img-top"
+                                src="./images/girl image for hero.jpg"
+                                alt="Picture showing one of the ways to help us"
+                                height="400"
+                        /></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem Ipsum!</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Fugit aliquam aperiam nulla
+                                perferendis dolor nobis numquam, rem expedita,
+                                aliquid optio, alias illum eaque. Non magni,
+                                voluptates quae, necessitatibus unde temporibus.
+                            </p>
+                            <a
+                                class="btn btn-success py-2 px-4"
+                                href="./donate.html">
+                                Donate
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="logo-col">
-                <a href="./index.html">
-                    <img
-                        src="./images/logo-removebg-preview.png"
-                        alt="Organisation logo" />
-                </a>
-                <p class="copyright">Copyright &copy; 2023</p>
-            </div>
-
-            <div class="footer-nav">
-                <h3>Links</h3>
-                <ul class="footer-nav-main">
-                    <li>
-                        <a href="./index.html" class="footer-nav-links">Home</a>
-                    </li>
-                    <li>
-                        <a href="./our-works.html" class="footer-nav-links"
-                            >Our Works</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./ways-to-help.html" class="footer-nav-links"
-                            >Ways to Help</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./about.html" class="footer-nav-links"
-                            >About us</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./contact.html" class="footer-nav-links"
-                            >Contact</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./donate.html" class="footer-nav-links"
-                            >Donate</a
-                        >
-                    </li>
-                </ul>
-            </div>
-
-            <div class="address-col">
-                <div class="phone-address">
-                    <h3>Call Us</h3>
-                    <a href="tel:+09123456">+2519123456</a>
+        <section class="px-5">
+            <h1 class="section-h1 text-center mb-5">Get Invloved</h1>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"
+                            ><img
+                                class="card-img-top"
+                                src="./images/old people hand.jpg"
+                                alt="Picture showing one of the ways to help us"
+                                height="400"
+                        /></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem Ipsum!</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Fugit aliquam aperiam nulla
+                                perferendis dolor nobis numquam, rem expedita,
+                                aliquid optio, alias illum eaque. Non magni,
+                                voluptates quae, necessitatibus unde temporibus.
+                            </p>
+                            <a
+                                class="btn btn-success py-2 px-4"
+                                href="contact.html">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="email-address">
-                    <h3>Email Us</h3>
-                    <a href="mailto:contact@babulkeyer.com"
-                        >contact@babulkeyer.com</a
-                    >
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                        <a href="#"
+                            ><img
+                                class="card-img-top"
+                                src="./images/kid getting reated.jpg"
+                                alt="Picture showing one of the ways to help us"
+                                height="400"
+                        /></a>
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem Ipsum!</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Fugit aliquam aperiam nulla
+                                perferendis dolor nobis numquam, rem expedita,
+                                aliquid optio, alias illum eaque. Non magni,
+                                voluptates quae, necessitatibus unde temporibus.
+                            </p>
+                            <a
+                                class="btn btn-success py-2 px-4"
+                                href="contact.html">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="follow-us">
-                <h3>Follow Us</h3>
-                <div class="social-media-icons">
+        <footer
+            class="text-center text-lg-start"
+            style="background-color: #096a5c; color: #fff">
+            <!-- Section: Social media -->
+            <section
+                class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
                     <a
                         href="https://www.facebook.com/profile.php?id=100068870828773"
                         ><img
                             src="./images/icons8-facebook-48.png"
-                            alt="A social media logo" /></a
-                    ><a href="https://twitter.com/transvelo"
+                            alt="A social media logo" />
+                    </a>
+                    <a href="https://twitter.com/transvelo"
                         ><img
                             src="./images/icons8-twitter-48.png"
-                            alt="A social media logo" /></a
-                    ><a
+                            alt="A social media logo"
+                    /></a>
+                    <a
                         href="https://www.youtube.com/channel/UCKBg_cuRVN45UAHG33-1SrQ"
                         ><img
                             src="./images/icons8-youtube-48.png  "
                             alt="A social media logo"
                     /></a>
                 </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <a href="./index.html">
+                                <img
+                                    src="./images/logo-removebg-preview.png"
+                                    alt="Organisation logo" />
+                            </a>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Links</h6>
+                            <p>
+                                <a href="./index.html" class="text-reset"
+                                    >Home</a
+                                >
+                            </p>
+                            <p>
+                                <a href="./our-works.html" class="text-reset"
+                                    >Our-works</a
+                                >
+                            </p>
+                            <p>
+                                <a href="./ways-to-help.html" class="text-reset"
+                                    >Ways to help</a
+                                >
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Links</h6>
+
+                            <p>
+                                <a href="./about.html" class="text-reset"
+                                    >About</a
+                                >
+                            </p>
+                            <p>
+                                <a href="./contact.html" class="text-reset"
+                                    >Contact</a
+                                >
+                            </p>
+                            <p>
+                                <a href="./donate.html" class="text-reset"
+                                    >Donate</a
+                                >
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>Addis Ababa, Ethiopia</p>
+                            <p>contact@babulkeyer.com</p>
+                            <p>+2519123456</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://github.com/Merwan-J"
+                    >Merwan-J</a
+                >
             </div>
+            <!-- Copyright -->
         </footer>
-        <script src="./script.js"></script>
     </body>
 </html>
